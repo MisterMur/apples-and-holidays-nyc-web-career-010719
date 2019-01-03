@@ -118,10 +118,9 @@ def all_holidays_with_bbq(holiday_hash)
   arr=[]
   holiday_hash.each do |seasons,holidays|
     holidays.each do |h,s|
-      # arr << holidays.key(s)
-      # puts holidays.values.include?("BBQ")
+     
       s.each do |el|
-        # puts el
+        
         if el == "BBQ"
           arr<< holidays.key(s)
         end
